@@ -3,9 +3,20 @@ const app = express();
 
 app.use(express.static('.'));
 
-// app.get('download', (req, res) => {
-//     const page = req.params.page;
-//     res.end();
-// })
+// app.get('/download', (request, response) => {
+//     const files = [
+//         'home.html',
+//         'contact.html'
+//     ];
+//
+//     const { page } = request.params;
+//
+//     if (!files.includes(page)) {
+//         console.warn('Access denied!');
+//         return;
+//     }
+//
+//     response.end();
+// });
 
 app.listen(7000);
